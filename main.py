@@ -1,5 +1,9 @@
+import service
+
 def main():
-    print("Hello from project-senseiofsensei!")
+    con=service.connect_database("data/sensei_of_sensei.db")
+
+    service.initialize(con)
 
 
 if __name__ == "__main__":

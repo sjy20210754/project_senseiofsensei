@@ -1,0 +1,92 @@
+name, difficulty, hp
+비나, Normal, 300000
+비나, Hard, 800000
+비나, VeryHard, 1100000
+비나, HardCore, 2000000
+비나, Extreme, 4500000
+비나, Insane, 7700000
+비나, Torment, 23000000
+헤세드, Normal, 80000
+헤세드, Hard, 311000
+헤세드, VeryHard, 504000
+헤세드, HardCore, 780000
+헤세드, Extreme, 3400000
+헤세드, Insane, 6400000
+헤세드, Torment, 21000000
+시로&쿠로, Normal, 600000
+시로&쿠로, Hard, 1150000
+시로&쿠로, VeryHard, 1410000
+시로&쿠로, HardCore, 2530000
+시로&쿠로, Extreme, 10500000
+시로&쿠로, Insane, 20000000
+시로&쿠로, Torment, 80000000
+예로니무스, Normal, 400000
+예로니무스, Hard, 900000
+예로니무스, VeryHard, 1350000
+예로니무스, HardCore, 2500000
+예로니무스, Extreme, 6000000
+예로니무스, Insane, 24000000
+예로니무스, Torment, 42000000
+KAITEN FX Mk.0, Normal, 320000
+KAITEN FX Mk.0, Hard, 700000
+KAITEN FX Mk.0, VeryHard, 1500000
+KAITEN FX Mk.0, HardCore, 3000000
+KAITEN FX Mk.0, Extreme, 12500000
+KAITEN FX Mk.0, Insane, 16000000
+KAITEN FX Mk.0, Torment, 70000000
+페로로지라, Normal, 380000
+페로로지라, Hard, 1100000
+페로로지라, VeryHard, 1600000
+페로로지라, HardCore, 2500000
+페로로지라, Extreme, 8000000
+페로로지라, Insane, 22000000
+페로로지라, Torment, 44000000
+호드, Normal, 80000
+호드, Hard, 125000
+호드, VeryHard, 300000
+호드, HardCore, 480000
+호드, Extreme, 1600000
+호드, Insane, 2800000
+호드, Torment, 18000000
+고즈, Normal, 300000
+고즈, Hard, 945000
+고즈, VeryHard, 2100000
+고즈, HardCore, 3150000
+고즈, Extreme, 13000000
+고즈, Insane, 30000000
+고즈, Torment, 50000000
+그레고리오, Normal, 1000000
+그레고리오, Hard, 3000000
+그레고리오, VeryHard, 6000000
+그레고리오, HardCore, 10000000
+그레고리오, Extreme, 40000000
+그레고리오, Insane, 140000000
+그레고리오, Torment, 220000000
+호버크래프트, Normal, 100000
+호버크래프트, Hard, 300000
+호버크래프트, VeryHard, 1000000
+호버크래프트, HardCore, 2000000
+호버크래프트, Extreme, 8500000
+호버크래프트, Insane, 18000000
+호버크래프트, Torment, 32000000
+묘귀 쿠로카게, Normal, 1000000
+묘귀 쿠로카게, Hard, 1500000
+묘귀 쿠로카게, VeryHard, 3000000
+묘귀 쿠로카게, HardCore, 4500000
+묘귀 쿠로카게, Extreme, 18000000
+묘귀 쿠로카게, Insane, 46000000
+묘귀 쿠로카게, Torment, 70000000
+게부라, Normal, 400000
+게부라, Hard, 600000
+게부라, VeryHard, 1400000
+게부라, HardCore, 6000000
+게부라, Extreme, 26000000
+게부라, Insane, 87000000
+게부라, Torment, 134000000
+예소드, Normal, 60000
+예소드, Hard, 100000
+예소드, VeryHard, 210000
+예소드, HardCore, 650000
+예소드, Extreme, 3000000
+예소드, Insane, 7500000
+예소드, Torment, 36000000
