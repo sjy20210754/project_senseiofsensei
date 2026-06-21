@@ -1,14 +1,14 @@
-name, attack
-비나, 관통
-헤세드, 폭발
-시로&쿠로, 관통
-예로니무스, 폭발
-KAITEN FX Mk.0, 관통
-페로로지라, 신비
-호드, 신비
-고즈, 폭발
-그레고리오, 신비
-호버크래프트, 관통
-묘귀 쿠로카게, 신비
-게부라, 신비
-예소드, 폭발
+name, attack, image_path
+비나, 관통, assets/images/비나.png
+헤세드, 폭발, assets/images/헤세드.png
+시로&쿠로, 관통, assets/images/시로&쿠로.png
+예로니무스, 폭발, assets/images/예로니무스.png
+KAITEN FX Mk.0, 관통, assets/images/KAITEN FX Mk.0.png
+페로로지라, 신비, assets/images/페로로지라.png
+호드, 신비, assets/images/호드.png
+고즈, 폭발, assets/images/고즈.png
+그레고리오, 신비, assets/images/그레고리오.png
+호버크래프트, 관통, assets/images/호버크래프트.png
+묘귀 쿠로카게, 신비, assets/images/묘귀 쿠로카게.png
+게부라, 신비, assets/images/게부라.png
+예소드, 폭발, assets/images/예소드.png

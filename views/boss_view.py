@@ -5,7 +5,7 @@ def create_boss_view(df, on_select, boss_counter)->ft.Control:
         bgcolor=ft.Colors.BLUE_50,
         expand=True
     )
-    def on_click_boss(e, name:str, defense:str, attack:str, terrain:str):
+    def on_click_boss(e, name:str, defense:str, attack:str, terrain:str, image_path:str):
         detail_df=on_select(name)
         hp_list=detail_df['hp'].tolist()
         counter_df=boss_counter(name, defense, terrain)
@@ -18,7 +18,7 @@ def create_boss_view(df, on_select, boss_counter)->ft.Control:
             expand=True,
             controls=[
                 ft.Image(
-                    src=f"assets/images/{name}.png"
+                    src=f"{image_path}"
                 ),
                 ft.Text(f"{name}", size=30, weight=ft.FontWeight.BOLD),
                 ft.Text(f"{attack} {defense} {terrain}", size=20),
@@ -44,14 +44,14 @@ def create_boss_view(df, on_select, boss_counter)->ft.Control:
                     ft.Text(f"{row['name']}",weight=ft.FontWeight.BOLD,size=30),
                     ft.Text(f"{row['attack']} {row['defense']} {row['terrain']}"),
                     ft.Image(
-                        src=f"assets/images/{row['name']}.png",
+                        src=f"{row['image_path']}",
                         width=300,
                         height=100,
                         fit=ft.BoxFit.CONTAIN
                     ),
                 ]
             ),
-            on_click=lambda e, name=row['name'], defense=row['defense'], attack=row['attack'], terrain=row['terrain']: on_click_boss(e, name, defense, attack, terrain)
+            on_click=lambda e, name=row['name'], defense=row['defense'], attack=row['attack'], terrain=row['terrain'], image_path=row['image_path']: on_click_boss(e, name, defense, attack, terrain, image_path)
         )
         card_list.append(card)
 

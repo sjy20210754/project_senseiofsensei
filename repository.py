@@ -14,7 +14,8 @@ def create_table(con: duckdb.DuckDBPyConnection):
         CREATE TABLE IF NOT EXISTS boss
         (
             name VARCHAR NOT NULL PRIMARY KEY,
-            attack VARCHAR NOT NULL
+            attack VARCHAR NOT NULL,
+            image_path VARCHAR NOT NULL
         );
         -- 지형
         CREATE TABLE IF NOT EXISTS terrain
@@ -71,6 +72,8 @@ def create_table(con: duckdb.DuckDBPyConnection):
             normal_skill VARCHAR NOT NULL,
             passive_skill VARCHAR NOT NULL,
             sub_skill VARCHAR NOT NULL,
+            image_path VARCHAR NOT NULL,
+            memory_image_path VARCHAR NOT NULL,
             PRIMARY KEY (name, version),
             FOREIGN KEY (name) REFERENCES student (name)
         );
@@ -128,7 +131,7 @@ def get_versionlist(con:duckdb.DuckDBPyConnection)->pd.DataFrame:
     """
     뷰의 학생 버전(version) 리스트 반환
     """
-    return con.execute("SELECT name, version, attack, defense FROM version").df()
+    return con.execute("SELECT name, version, attack, defense, image_path FROM version").df()
 
 #-------------------------------------------------------------------------------
 # region : terrain_rank (학생 지역 상성)
@@ -182,7 +185,8 @@ def get_bosslist(con: duckdb.DuckDBPyConnection)->pd.DataFrame:
             d.name,
             d.defense,
             b.attack,
-            s.terrain
+            s.terrain,
+            b.image_path
         FROM defense_type d
         JOIN boss b ON d.name=b.name
         JOIN boss_stage s ON b.name=s.name
@@ -212,6 +216,7 @@ def find_version_all_info(con: duckdb.DuckDBPyConnection, name:str, version:str)
             v.normal_skill,
             v.passive_skill,
             v.sub_skill,
+            v.memory_image_path,
             t.terrain,
             t.rank
         FROM student s

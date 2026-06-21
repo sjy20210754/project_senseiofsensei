@@ -14,7 +14,7 @@ def create_student_view(df, on_select)->ft.Control:
             expand=True,
             controls=[
                 ft.Image(
-                    src=f"assets/images/{info['name']}({info['version']})-메모리.png"
+                    src=f"{info['memory_image_path']}"
                 ),
                 ft.Text(f"{info['fullname']}({info['version']})",size=30, weight=ft.FontWeight.BOLD),
                 ft.Text(f"{info['school']} - {info['club']}", size=20),
@@ -63,7 +63,7 @@ def create_student_view(df, on_select)->ft.Control:
                 horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                 controls=[
                     ft.Image(
-                        src=f"assets/images/{row['name']}({row['version']}).png",
+                        src=f"{row['image_path']}",
                         width=100,
                         height=100,
                         fit=ft.BoxFit.CONTAIN
